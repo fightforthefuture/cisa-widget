@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Oswald:400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="flash"></div>
+	
+	<div id="scene1">
+		<div id="camera"><div class="lens"><img src="images/camera3.png" /></div></div>
+		<div id="record_light"><div class="blink"><img src="images/record_light.png" /></div></div>
+	</div>
+
+	<div id="scene2">
+		<div id="modal_container">
+			<div id="modal">
+				<a id="close" href="#" class="tk-proxima-nova">Close</a>
+				<div id="houses_back"></div>
+				<div id="houses_front"></div>
+				<div id="main">
+					<div id="content">
+						<p class="tk-proxima-nova" id="cta"></p>
+						<p class="learn"><a href="https://www.decidethefuture.org" target="_blank">LEARN MORE...</a>
+						<form>
+							<div class="action visible" id="action1">
+								<p><strong>EMAIL CONGRESS TO STOP CISA!</strong></p>
+								<input type="text" name="name" placeholder="Your name"/><input type="text" name="email" placeholder="Email address"/><input type="text" name="address1" placeholder="Street Address"/><input type="text" name="zip" placeholder="Postal Code"/>
+								<button type="submit" id="email_button">Email Congress</button>
+								<p class="disclosure">
+									<a href="https://www.fightforthefuture.org" target="_blank">Fight for the Future</a>
+									will send
+									<a href="#" id="letter_link">your letter</a>
+									to Congress and email you campaign updates.
+									<a href="https://www.fightforthefuture.org/privacy" target="_blank">Privacy</a>
+								</p>
+							</div>
+							<div class="action nodisplay" id="action2">
+								<p><strong>Thanks! Now can you call Congress?</strong></p>
+								<p>Time is short. Enter your phone number and we'll call your phone and connect you to your senators.</p>
+								<input type="text" class="wide" name="phone" placeholder="Your phone number"/><button type="submit" id="call_button" class="narrow">Call Congress</button>
+							</div>
+							<div class="action nodisplay" id="action3">
+								<p class="nopad"><strong>We're calling your phone!</strong></p>
+								<p class="instruction">When they answer, please be polite and say:</p>
+								<p class="quote">
+									“Please oppose CISA, the Cybersecurity Information Sharing Act. CISA won't fix the cybersecurity problems we face in the U.S.—it will only lead to more warrantless mass surveillance of millions of Americans. We need real cybersecurity legislation, and it's not CISA.”
+								</p>
+							</div>
+						</form>
+						<div id="shares">
+							<a href="https://www.facebook.com/sharer.php?u=https://www.decidethefuture.org/?from=widget" target="_blank" class="social facebook"><img src="images/fb_white.png"> Share this action</a>
+							<a href="https://twitter.com/intent/tweet?related=fightfortheftr&text=Time%20is%20running%20out%20to%20%23StopCISA.%20The%20Senate%20votes%20soon.%20Take%20action%20to%20protect%20privacy%20%26%20security%20on%20the%20Internet!%20www.decidethefuture.org" target="_blank" class="social twitter"><img src="images/tw_white.png"> Tweet this action</a>
+						</div>
+					</div>
+					<div id="button_glow"></div>
+					<!--<div id="button_container"><div id="button"><a href="https://pack.resetthenet.org/" target="_blank"><img src="images/button.png"/></a></div></div>-->
+				</div>
+				<div id="letter">
+					<textarea>Dear Senator, 
+
+I'm writing you as a part of the effort to stop CISA, a weak cybersecurity bill that would put us all at greater risk to hacks than ever before. This bill actually makes more private info more vulnerable to hacks. Please protect the Internet by opposing the Cybersecurity Information Sharing Act of 2015 (CISA, S. 754). By granting companies sweeping liability protection for sharing private information with the government, the bill would endanger the privacy and civil liberties of Internet users and make the Internet more vulnerable to attacks. 
+
+CISA fails as a cybersecurity bill because it does the following: undermines civilian agency leadership of U.S. cybersecurity efforts in favor of automatic and simultaneous transfer of cybersecurity information to U.S. intelligence agencies; allows entities to transfer personally identifiable information to the government; authorizes the federal government to use the information in a broad range of investigations and prosecutions; provides broad immunity protections for corporations, disincentivizing companies from protecting the privacy of users; and fails to incorporate the critical role of transparency in oversight, providing a broad new categorical exemption from disclosure under the Freedom of Information Act, the first since the Act’s passage in 1966.
+
+The bill also contains a defensive measures provision that would create new security risks by potentially permitting companies to “hack back” against perceived threats in such a way that would otherwise be illegal under current law.
+
+Recent events have further heightened opposition to CISA. First, the government has used cyber indicators as the basis for searches of Internet traffic. Second, multiple government reports conclude the federal government has serious computer security flaws unrelated to information sharing. Sending more personal information to federal agencies is not the answer to cybersecurity threats to personal information.
+
+Cybersecurity and privacy are not at odds. CISA is neither a serious solution to many of the current threats we face nor does it adequately account for privacy and civil liberties. We urge you to reject CISA.</textarea>
+					<div class="dismiss" id="close_letter"><button>SAVE AND CLOSE</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a id="logo" href="https://www.internetdefenseleague.org" target="_blank"><img src="images/idl.png"/></a>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
