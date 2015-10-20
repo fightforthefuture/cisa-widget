@@ -28,7 +28,7 @@
 
 
 if (typeof _rtn_options == "undefined") _rtn_options = {};
-if (typeof _rtn_options.iframe_base_path == "undefined") _rtn_options.iframe_base_path = 'https://fightforthefuture.github.io/reset-the-net-widget/widget/iframe';
+if (typeof _rtn_options.iframe_base_path == "undefined") _rtn_options.iframe_base_path = 'https://widget.decidethefuture.org/widget/iframe';
 if (typeof _rtn_options.animation == "undefined") _rtn_options.animation = 'main';
 if (typeof _rtn_options.delay == "undefined") _rtn_options.delay = 0;
 if (typeof _rtn_options.debug == "undefined") _rtn_options.debug = false;
@@ -140,12 +140,12 @@ function onDomContentLoaded() {
 	// Should we show the widget, regardless?
 	if (!_rtn_options.always_show_widget && window.location.href.indexOf('ALWAYS_SHOW_RTN_WIDGET') === -1) {
 		// Only show once.
-		if (_rtn_util.getCookie('_RTN_WIDGET_SHOWN')) {
+		if (_rtn_util.getCookie('_CISA_WIDGET_SHOWN_YAY')) {
 			return;
 		}
 	}
 
-	_rtn_util.setCookie('_RTN_WIDGET_SHOWN', 'true', 365);
+	_rtn_util.setCookie('_CISA_WIDGET_SHOWN_YAY', 'true', 365);
 
 	_rtn_util.injectCSS('_rtn_iframe_css', '#_rtn_iframe { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 20000; }');
 
@@ -158,7 +158,7 @@ function onDomContentLoaded() {
 			images[i].src = _rtn_options.iframe_base_path + '/images/' + preload.arguments[i]
 			images[i].onload = function() {
 				preloaded++;
-				_rtn_util.log('Preloaded ' + preloaded + ' images.');
+				_rtn_util.log('Preloaded ' + preloaded + ' images: ' + this.src);
 				if (preloaded == images.length)
 				{
 					_rtn_util.log('DONE PRELOADING IMAGES. Starting animation in ' + _rtn_options.delay + ' milliseconds.');
