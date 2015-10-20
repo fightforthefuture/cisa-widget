@@ -70,9 +70,9 @@ window.setTimeout(function() {
 	for (var i = 0; i < children.length; i++)
 	{
 		if (i && children[i-1].innerHTML == '.')
-			delay += 500;
+			delay += 366;
 		else
-			delay += 30;
+			delay += 25;
 		setDisplayDelay(children[i], delay)
 	}
 	setTimeout(function() {
@@ -96,7 +96,7 @@ window.setTimeout(function() {
 				document.getElementById('logo').className = 'visible';
 			}, 50);
 		}, 1000);
-	}, 7000);
+	}, 6000);
 
 }, 6500);
 
