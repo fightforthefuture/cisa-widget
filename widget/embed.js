@@ -143,13 +143,6 @@ function onDomContentLoaded() {
 		if (_rtn_util.getCookie('_RTN_WIDGET_SHOWN')) {
 			return;
 		}
-
-		// Only show on June 5th.
-		var date = new Date();
-		var dateString = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate();
-		if (dateString !== '2014/6/5') {
-			return;
-		}
 	}
 
 	_rtn_util.setCookie('_RTN_WIDGET_SHOWN', 'true', 365);
