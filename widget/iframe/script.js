@@ -47,7 +47,8 @@ window.setTimeout(function() {
 	document.getElementById('flash').style.display = 'none';
 
 	var cta = document.getElementById('cta');
-	var str = 'Two years after the NSA revelations, the US Congress is still failing to protect our rights. Now they\'re about to vote on CISA, a bill that could end privacy on the Internet and make us all vulnerable to cyber attacks.';
+	// var str = 'Two years after the NSA revelations, the US Congress is still failing to protect our rights. Now they\'re about to vote on CISA, a bill that could end privacy on the Internet and make us all vulnerable to cyber attacks.';
+	var str = 'This week, Congress is voting on CISA, a fake cybersecurity bill that turns websites into government spies, and puts all of our data at greater security risk. Don\'t let Congress break the Internet.';
 
 	var fragment = document.createDocumentFragment();
 	for (var i = 0; i < str.length; i++) {
@@ -69,7 +70,7 @@ window.setTimeout(function() {
 	var delay = 0;
 	for (var i = 0; i < children.length; i++)
 	{
-		if (i && children[i-1].innerHTML == '.')
+		if (i && (children[i-1].innerHTML == '.'))
 			delay += 366;
 		else
 			delay += 25;
