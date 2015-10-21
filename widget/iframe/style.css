@@ -19,7 +19,7 @@ body {
 	margin: 0px auto;
 	width: 675px;
 	height: 549px;
-	border-radius: 10px;
+	border-radius: 0px;
 	background-image: url(images/background.png);
 	background-position: 0px 0px;
 	background-size: 100% auto;
