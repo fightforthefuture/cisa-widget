@@ -101,6 +101,14 @@ body {
 	color: white;
 	text-align: center;
 }
+#modal #content p#cta {
+	opacity: 0;
+	-ms-transition: opacity 2.5s ease-in;
+	-o-transition: opacity 2.5s ease-in;
+	-moz-transition: opacity 2.5s ease-in;
+	-webkit-transition: opacity 2.5s ease-in;
+	transition: opacity 2.5s ease-in;
+}
 #modal #content form {
 	width: 100%;
 	position: absolute;

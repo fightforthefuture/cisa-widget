@@ -46,39 +46,11 @@ window.setTimeout(function() {
 	// Hide the flash, explicitly.
 	document.getElementById('flash').style.display = 'none';
 
-	var cta = document.getElementById('cta');
-	// var str = 'Two years after the NSA revelations, the US Congress is still failing to protect our rights. Now they\'re about to vote on CISA, a bill that could end privacy on the Internet and make us all vulnerable to cyber attacks.';
-	var str = 'This week, Congress is voting on CISA, a fake cybersecurity bill that turns websites into government spies, and puts all of our data at greater security risk. Don\'t let Congress break the Internet.';
+    document.getElementById('cta').style.opacity = 1;
 
-	var fragment = document.createDocumentFragment();
-	for (var i = 0; i < str.length; i++) {
-		var span = document.createElement('span');
-		span.style.color = 'transparent';
-		span.innerHTML = str[i];
-		fragment.appendChild(span);
-	}
-	cta.appendChild(fragment.cloneNode(true));
-
-	var children = cta.childNodes;
-
-	var setDisplayDelay = function(node, delay) {
-		setTimeout(function() {
-			node.style.color = 'white';
-		}, delay);
-	}
-
-	var delay = 0;
-	for (var i = 0; i < children.length; i++)
-	{
-		if (i && (children[i-1].innerHTML == '.'))
-			delay += 366;
-		else
-			delay += 25;
-		setDisplayDelay(children[i], delay)
-	}
 	setTimeout(function() {
 		document.querySelector('.learn').style.opacity = 1;
-	}, delay+500);
+	}, 2000);
 	setTimeout(function() {
 		document.getElementById('button_glow').className = 'animate';
 
@@ -97,9 +69,9 @@ window.setTimeout(function() {
 				document.getElementById('logo').className = 'visible';
 			}, 50);
 		}, 1000);
-	}, 6000);
+	}, 2500);
 
-}, 6500);
+}, 6000);
 
 // }, 1); // JL HACK
 
